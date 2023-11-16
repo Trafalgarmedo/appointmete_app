@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-11-16 12:32:16.914750",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "full_name",
+  "speciality",
+  "column_break_lflyl",
+  "last_name",
+  "qualifations",
+  "section_break_l5lzo",
+  "shifts"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "last Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qualifations",
+   "fieldtype": "Data",
+   "label": "Qualifations"
+  },
+  {
+   "fieldname": "speciality",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Speciality",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_lflyl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shifts",
+   "fieldtype": "Table",
+   "label": "Shifts",
+   "options": "Doctor Shift",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_l5lzo",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-16 13:29:53.421077",
+ "modified_by": "Administrator",
+ "module": "Appointments App",
+ "name": "Doctor",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
