@@ -12,9 +12,7 @@
   "speciality",
   "column_break_lflyl",
   "last_name",
-  "qualifations",
-  "section_break_l5lzo",
-  "shifts"
+  "qualifations"
  ],
  "fields": [
   {
@@ -32,8 +30,10 @@
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Full Name",
-   "read_only": 1
+   "read_only": 1,
+   "unique": 1
   },
   {
    "fieldname": "qualifations",
@@ -50,22 +50,11 @@
   {
    "fieldname": "column_break_lflyl",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "shifts",
-   "fieldtype": "Table",
-   "label": "Shifts",
-   "options": "Doctor Shift",
-   "reqd": 1
-  },
-  {
-   "fieldname": "section_break_l5lzo",
-   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-16 13:29:53.421077",
+ "modified": "2023-11-17 16:44:17.656203",
  "modified_by": "Administrator",
  "module": "Appointments App",
  "name": "Doctor",
@@ -85,7 +74,9 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "full_name"
 }

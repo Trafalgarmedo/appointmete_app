@@ -5,7 +5,7 @@ import frappe
 from frappe.model.document import Document
 
 class Doctor(Document):
-	def validate(self):
+	def before_save(self):
 		self.set_full_name()
 	
 	def set_full_name(self):

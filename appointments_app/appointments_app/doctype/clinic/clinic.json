@@ -9,6 +9,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "doctor",
   "contact_number",
   "route",
   "column_break_lokiy",
@@ -43,13 +44,20 @@
   {
    "fieldname": "column_break_lokiy",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Doctor",
+   "reqd": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2023-11-16 12:19:05.980236",
+ "modified": "2023-11-16 14:05:38.835035",
  "modified_by": "Administrator",
  "module": "Appointments App",
  "name": "Clinic",
